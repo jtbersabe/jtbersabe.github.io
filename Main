@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Main | Julieber Bersabe</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="About" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://jtbersabe.github.io/" />
+<meta property="og:url" content="https://jtbersabe.github.io/" />
+<meta property="og:site_name" content="Julieber Bersabe" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"About","name":"Julieber Bersabe","url":"https://jtbersabe.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=0372919395714f4c21fb97707ed3b68404202f9e">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://janghoonchoi.github.io/">Julieber Bersabe</a></h1>
+
+        
+
+        <p></p>
+
+        
+
+        
+        <p class="view"><a href="https://www.linkedin.com/in/jtbersabe/">View My LinkedIn Profile</a></p>
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="about">About</h2>
+
+<p>I am currently a PhD student in Geography at Kyungpook National University, Daegu, South Korea. I am currently a full-time researcher in the 
+<a href="https://ual.knu.ac.kr">Urban Analysis & Modeling and GIScience Laboratory</a> and an affiliate doctoral researcher at Daegu-Gyeongbuk Regional Center, Institute for Social Science Research.</p>
+
+<ul>
+  <li><a href="https://ual.knu.ac.kr">Laboratory Homepage</a></li>
+  <li><a href="https://www.google.com">CV</a></li>
+  <li><a href="https://www.researchgate.net/profile/Julieber-Bersabe-3">ResearchGate/a></li>
+  <li><a href="https://scholar.google.co.kr/citations?user=KNf66L0AAAAJ&hl=en">Google Scholar</a></li>
+</ul>
+
+<h2 id="research-interests">Research Interests</h2>
+
+<p>I am interested in </p>
+
+<h2 id="education">Education</h2>
+
+<ul>
+  <li><strong>Ph.D.</strong>, Geography, Kyungpook National University (Sept. 2024- present)
+    <ul>
+      <li>Advisor: <a href="https://cv.snu.ac.kr/kmlee">Prof. Byong-Woon Jun</a></li>
+    </ul>
+  </li>
+  <li><strong>M.S.</strong>, Geography, Kyungpook National University (Sept. 2022- Feb. 2024)
+  <li><strong>B.S.</strong>, Geography, University of the Philippines-Diliman (June 2015 - Jan. 2020)</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+
+<h3 id="peer-reviewed">Peer-reviewed</h3>
+<ul>
+  <li><strong>Julieber Bersabe</strong>, and Byong-woon Jun, “The Machine Learning-Based Mapping of Urban Pluvial Flood Susceptibility in Seoul Integrating Flood Conditioning Factors and Drainage-Related Data,” ISPRS International Journal of Geo-Information, 2025. 
+  <a href="https://www.mdpi.com/2220-9964/14/2/57">[pdf]</a></li>
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>
