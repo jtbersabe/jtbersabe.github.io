@@ -1,11 +1,14 @@
 ---
 permalink: /
-title: "About Me"
+title: ##
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+About Me
+====
 
 Julieber Bersabe is a **Postgraduate Researcher (Doctorate)** in the Department of Geography at Kyungpook National University, Daegu, South Korea. Since 2022, he has been part of the research team in the [Urban Analysis & Modeling and GIScience Laboratory](https://ual.knu.ac.kr) and has recently become affiliated with the Daegu-Gyeongbuk Regional Center at The Institute for Social Science Research. He received his Master's degree in Geography from Kyungpook National University and his Bachelor of Science in Geography from the University of the Philippines-Diliman.
 
