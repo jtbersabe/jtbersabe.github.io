@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Julieber Bersabe"
-  pronouns         : "he/him"  
+  pronouns         : #"he/him"  
   bio              : "PhD Candidate at Kyungpook National University"
   location         : "Daegu, South Korea"
   employer         : "Kyungpook National University"
