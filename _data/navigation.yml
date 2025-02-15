@@ -13,9 +13,6 @@ main:
   
   - title: "Research"
     url: /research/
-    sublinks:
-    -title: Publications
-    url: /research/publications
 
   - title: "Presentations"
     url: /talks/    
