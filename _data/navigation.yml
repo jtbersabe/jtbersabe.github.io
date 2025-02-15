@@ -7,9 +7,13 @@
 main:
   - #title: "CV"
     #url: /cv/  
+
+  - title: "News"
+    url: /year-archive/
   
   - title: "Research"
     url: /research/
+    sublinks:
     -title: Publications
     url: /research/publications
 
