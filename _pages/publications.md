@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Publications"
-permalink: /research/publications
+permalink: /publications/
 author_profile: true
 ---
 
@@ -13,3 +13,5 @@ author_profile: true
 
 1. The University of the Philippines, (2019). Awesome OSM: A Comprehensive Guide on Mapping Building Footprints, Using OpenStreetMap, HOT Tasking Manager, and other useful applications in mapping footprints. Catholic Relief Services.
     * _Part of the team that wrote and designed the manual_
+
+## Conferences
