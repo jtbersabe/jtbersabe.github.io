@@ -7,7 +7,7 @@
 main:
 
   - title: "News"
-    url: /year-archive/
+    url: /news/
   
   - #title: "Research"
     #url: /research/ 
