@@ -20,6 +20,7 @@ author_profile: true
 3. **Bersabe, J. T.**, & Jun, B.-W. (2023, November 7-9). *Exploring Spatially Varying Relationships Between Basement Homes in Flood Risk Areas and Vulnerable Population in Seoul* [Poster session]. 2023 Fall Conference of The Korean Association of Geographic Information Studies, Jeju, South Korea. 
 
 ## Awards & Honors
+- **Best Oral Presentation**. 2025 KAGIS Fall Conference & International Symposium of IAG`i, Jeju, South Korea (November 2025)
 - **Best Poster Presentation**. 2024 Joint Fall Conference of The Korean Association of Geographic Information Studies and Korean Society of Surveying, Geodesy, Photogrammetry and Cartography, Jeju, South Korea (November 2024)
 - **Young Geographers Award - Best Paper**. The 15th Korea-China-Japan Joint Conference on Geography, Seoul, South Korea (October 2023)
 
