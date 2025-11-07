@@ -10,12 +10,14 @@ author_profile: true
 
 ## Conferences
 ### International
-1. **Bersabe, J. T.**, & Jun, B.-W. (2023, October 28-29). *Assessing Urban Flood Susceptibility Maps Based on Machine Learning Models in Seoul, South Korea* [Paper presentation]. The 32nd Annual Conference of the Geographic Information System Association and International Association of Geo-informatics, Chofu, Tokyo, Japan.
-2. **Bersabe, J. T.**, & Jun, B.-W. (2023, October 21-23). *Estimating the Populations Vulnerable to Flood Risk in Seoul Using Dasymetric Mapping and Integrated Flooding Data* [Paper presentation]. The 15th Korea-China-Japan Joint Conference on Geography, Seoul, South Korea. 
+1. **Bersabe, J. T.**, & Jun, B.-W. (2025, November 6-8). *Effect of Multi-Source Gridded Population Data on Flood Exposure Estimates: Gangnam, South Korea* [Paper presentation]. 2025 KAGIS Fall Conference & International Symposium of IAG`i, Jeju, South Korea.
+2. **Bersabe, J. T.**, & Jun, B.-W. (2023, October 28-29). *Assessing Urban Flood Susceptibility Maps Based on Machine Learning Models in Seoul, South Korea* [Paper presentation]. The 32nd Annual Conference of the Geographic Information System Association and International Association of Geo-informatics, Tokyo, Japan.
+3. **Bersabe, J. T.**, & Jun, B.-W. (2023, October 21-23). *Estimating the Populations Vulnerable to Flood Risk in Seoul Using Dasymetric Mapping and Integrated Flooding Data* [Paper presentation]. The 15th Korea-China-Japan Joint Conference on Geography, Seoul, South Korea. 
 
 ### Domestic
-1. **Bersabe, J. T.**, & Jun, B.-W. (2024, November 14-16). *Exploring the Impact of Drain-related Variables in Modeling Urban Flood Susceptibility Using Machine Learning* [Poster session]. 2024 Joint Fall Conference of The Korean Association of Geographic Information Studies and Korean Society of Surveying, Geodesy, Photogrammetry and Cartography, Jeju, South Korea.
-2. **Bersabe, J. T.**, & Jun, B.-W. (2023, November 7-9). *Exploring Spatially Varying Relationships Between Basement Homes in Flood Risk Areas and Vulnerable Population in Seoul* [Poster session]. 2023 Fall Conference of The Korean Association of Geographic Information Studies, Jeju, South Korea. 
+1. **Bersabe, J. T.**, & Jun, B.-W. (2025, May 29-31). *Comparative Assessment of the Accuracy of Global and National Gridded Population Distribution Datasets in South Korea* [Poster session]. 2025 Spring Conference of The Korean Association of Geographic Information Studies, Jeju, South Korea.
+2. **Bersabe, J. T.**, & Jun, B.-W. (2024, November 14-16). *Exploring the Impact of Drain-related Variables in Modeling Urban Flood Susceptibility Using Machine Learning* [Poster session]. 2024 Joint Fall Conference of The Korean Association of Geographic Information Studies and Korean Society of Surveying, Geodesy, Photogrammetry and Cartography, Jeju, South Korea.
+3. **Bersabe, J. T.**, & Jun, B.-W. (2023, November 7-9). *Exploring Spatially Varying Relationships Between Basement Homes in Flood Risk Areas and Vulnerable Population in Seoul* [Poster session]. 2023 Fall Conference of The Korean Association of Geographic Information Studies, Jeju, South Korea. 
 
 ## Awards & Honors
 - **Best Poster Presentation**. 2024 Joint Fall Conference of The Korean Association of Geographic Information Studies and Korean Society of Surveying, Geodesy, Photogrammetry and Cartography, Jeju, South Korea (November 2024)
