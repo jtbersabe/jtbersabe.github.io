@@ -15,4 +15,4 @@ He has been awarded the **Global Korea Scholarship**, a fully-funded program off
 
 This website serves as a platform to showcase his research, projects, and academic endeavors. Feel free to explore and reach out for collaboration or discussions on shared interests!
 
-  You may download my CV <a href="{{ base_path }}\files\CV_Julieber Bersabe.pdf">here</a>.
+  You may view (or download) my CV [here](https://www.overleaf.com/read/hsvyktnxndsh#a002d2).
