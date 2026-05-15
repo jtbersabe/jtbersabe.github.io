@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Julieber Bersabe – PhD Student in Geography, Kyungpook National University. Research in urban analytics, flood risk, GIS, and environmental justice." />
+  <title>Julieber Bersabe – Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #f8f6f1;
+      --surface:   #ffffff;
+      --border:    #e2ddd6;
+      --text:      #2b2825;
+      --muted:     #7a7068;
+      --accent:    #2d6a4f;
+      --accent2:   #b56727;
+      --link:      #1a4f8a;
+      --sidebar-w: 280px;
+      --nav-h:     58px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      background: rgba(248,246,241,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      gap: 0.25rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+    }
+    nav a:hover { color: var(--text); background: var(--border); }
+    nav .brand { color: var(--text); font-weight: 600; margin-right: auto; font-size: 14px; }
+
+    /* ── LAYOUT ── */
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      position: sticky;
+      top: calc(var(--nav-h) + 1.5rem);
+      text-align: center;
+    }
+    .avatar-wrap {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin: 0 auto 1.1rem;
+      background: linear-gradient(135deg, #2d6a4f22, #b5672722);
+      border: 3px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar-placeholder {
+      font-size: 56px;
+      color: var(--accent);
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-weight: 300;
+      opacity: 0.7;
+    }
+    .sidebar h2 {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    .sidebar .title {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0.3rem 0 0.75rem;
+    }
+    .sidebar .affil {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+    }
+    .sidebar .affil strong { display: block; font-weight: 600; }
+
+    .contact-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .contact-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--link);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .contact-links li a:hover { background: #1a4f8a11; }
+    .contact-links .icon { font-size: 15px; }
+
+    .sidebar-divider { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+
+    .tag-cloud { display: flex; flex-wrap: nowrap; gap: 0.4rem; justify-content: center; margin-top: 0.5rem; }
+    .tag {
+      font-size: 11px;
+      background: var(--accent)18;
+      color: var(--accent);
+      border: 1px solid var(--accent)33;
+      padding: 0.15rem 0.55rem;
+      border-radius: 20px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── MAIN ── */
+    main { min-width: 0; }
+
+    .section { margin-bottom: 3rem; }
+    .section:target > .section-title { color: var(--accent); }
+
+    .section-title {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title .emoji { font-style: normal; }
+
+    /* About */
+    #about p { margin-bottom: 0.8rem; color: var(--text); }
+    #about a { color: var(--link); }
+
+    /* News */
+    .news-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .news-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.6rem 0.75rem;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.15s;
+    }
+    .news-list li:hover { background: #00000006; }
+    .news-list .date {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-top: 0.15rem;
+      min-width: 75px;
+    }
+    .news-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.35rem;
+      vertical-align: middle;
+    }
+    .badge-award   { background: #fff3cd; color: #8a6000; border: 1px solid #f0c04d; }
+    .badge-pub     { background: #d4edda; color: #155724; border: 1px solid #94d3a2; }
+    .badge-conf    { background: #d0e8ff; color: #0d4f8a; border: 1px solid #7ab8f5; }
+    .badge-scholar { background: #f3e5f5; color: #6a0dad; border: 1px solid #ce93d8; }
+
+    /* Publications */
+    .pub-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .pub-card:hover { box-shadow: 0 4px 18px #00000012; border-color: #c9c1b6; }
+    .pub-year {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 0.15rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.06em;
+    }
+    .pub-title {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 0.3rem;
+      color: var(--text);
+    }
+    .pub-title a { color: var(--link); text-decoration: none; }
+    .pub-title a:hover { text-decoration: underline; }
+    .pub-authors { font-size: 13px; color: var(--muted); margin-bottom: 0.25rem; }
+    .pub-authors strong { color: var(--text); font-weight: 600; }
+    .pub-journal { font-size: 13px; color: var(--muted); font-style: italic; }
+
+    /* Conferences */
+    .conf-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+    .conf-item {
+      display: flex;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .conf-item:last-child { border-bottom: none; }
+    .conf-num {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      min-width: 28px;
+      padding-top: 0.15rem;
+    }
+    .conf-body { flex: 1; }
+    .conf-title { font-size: 14px; font-weight: 500; margin-bottom: 0.15rem; }
+    .conf-meta { font-size: 12.5px; color: var(--muted); }
+    .conf-type {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 0.1rem 0.45rem;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+      background: #e8f4fd;
+      color: #1a5fa8;
+      border: 1px solid #b3d7f5;
+    }
+    .conf-type.poster { background: #fff0e8; color: #c25a00; border-color: #f5c9a0; }
+
+    /* Awards */
+    .award-list { list-style: none; }
+    .award-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .award-item:last-child { border-bottom: none; }
+    .award-year {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 52px;
+      padding-top: 0.15rem;
+    }
+    .award-star { color: #c9a227; margin-right: 0.3rem; }
+    .award-name { font-size: 14px; font-weight: 500; }
+    .award-body { font-size: 13px; color: var(--muted); }
+
+    /* Education */
+    .edu-timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+    .edu-card {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .edu-card::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: 1.35rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 2px solid var(--accent);
+      transform: translateX(-50%);
+    }
+    .edu-card:last-child { border-bottom: none; }
+    .edu-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent)22, var(--accent2)22);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .edu-body { flex: 1; }
+    .edu-degree { font-family: 'Trebuchet MS', Trebuchet, sans-serif; font-size: 1.05rem; font-weight: 600; }
+    .edu-school { font-size: 13.5px; color: var(--text); font-weight: 500; margin: 0.1rem 0; }
+    .edu-detail { font-size: 13px; color: var(--muted); }
+    .edu-thesis { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 0.25rem; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .skill-group {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1rem 0.85rem;
+      text-align: center;
+    }
+    .skill-group-emoji { font-size: 26px; display: block; margin-bottom: 0.45rem; }
+    .skill-group h4 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .skill-group p { font-size: 13.5px; color: var(--text); }
+
+    /* Certifications */
+    .cert-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .cert-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0.85rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-size: 13.5px;
+    }
+    .cert-item .cert-score {
+      margin-left: auto;
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Scholarship */
+    .scholar-item {
+      display: flex;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .scholar-item:last-child { border-bottom: none; }
+    .scholar-year {
+      font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 55px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      font-size: 12.5px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    footer a { color: var(--link); text-decoration: none; }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      nav { padding: 0 1rem; overflow-x: auto; }
+      nav a { font-size: 12px; padding: 0.3rem 0.5rem; }
+      .wrapper { grid-template-columns: 1fr; gap: 1.5rem; }
+      .sidebar { position: static; }
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .section { animation: fadeUp 0.5s ease both; }
+    .section:nth-child(1) { animation-delay: 0.05s; }
+    .section:nth-child(2) { animation-delay: 0.10s; }
+    .section:nth-child(3) { animation-delay: 0.15s; }
+    .section:nth-child(4) { animation-delay: 0.20s; }
+    .section:nth-child(5) { animation-delay: 0.25s; }
+    .section:nth-child(6) { animation-delay: 0.30s; }
+    .section:nth-child(7) { animation-delay: 0.35s; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a class="brand" href="#about">Julieber Bersabe</a>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="#publications">Publications</a>
+  <a href="#conferences">Conferences</a>
+  <a href="#awards">Awards</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+</nav>
+
+<div class="wrapper">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+    <div class="avatar-wrap">
+      <img src="2307-증명55.jpg" alt="Julieber Bersabe"
+           style="width:100%;height:100%;object-fit:cover;object-position:top center;" />
+    </div>
+
+    <h2>Julieber Bersabe</h2>
+    <p class="title">PhD Student in Geography</p>
+    <div class="affil">
+      <strong>Kyungpook National University</strong>
+      Daegu, South Korea
+    </div>
+
+    <ul class="contact-links">
+      <li>
+        <a href="mailto:geog.jbersabe@gmail.com">
+          Email
+        </a>
+      </li>
+      <li>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+          Google Scholar
+        </a>
+      </li>
+      <li>
+        <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+          ResearchGate
+        </a>
+      </li>
+      <li>
+        <a href="https://orcid.org/" target="_blank" rel="noopener">
+          ORCID
+        </a>
+      </li>
+    </ul>
+
+    <hr class="sidebar-divider" />
+
+    <div style="text-align:left; font-size:12px; color:var(--muted); margin-bottom:0.5rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase;">Research Interests</div>
+    <div class="tag-cloud">
+      <span class="tag">Urban Geography</span>
+      <span class="tag">Urban Analytics</span>
+      <span class="tag">Environmental Justice</span>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a PhD student in the Department of Geography at
+        <a href="https://www.knu.ac.kr" target="_blank" rel="noopener">Kyungpook National University</a>,
+        South Korea, supervised by
+        <a href="#" target="_blank" rel="noopener">Prof. Byong-Woon Jun</a>.
+        My research sits at the intersection of applied urban geography, spatial analytics, and natural disaster studies.
+      </p>
+      <p>
+        I am broadly interested in how cities are exposed to environmental hazards — particularly urban flooding —
+        and how socially vulnerable populations bear disproportionate risks. My work integrates GIS, remote sensing,
+        and machine learning to map flood susceptibility and assess environmental justice in urban contexts.
+      </p>
+      <p>
+        My master's thesis, <em>"Environmental Justice Assessment of Urban Flood Risk in Seoul Using
+        Machine Learning and Intelligent Dasymetric Mapping,"</em> combined flood susceptibility modelling
+        with fine-grained population distribution data to uncover spatial inequities in flood exposure across Seoul.
+      </p>
+      <p>
+        I am passionate about:
+      </p>
+      <ul style="margin: 0.4rem 0 0.8rem 1.4rem; color: var(--text); font-size: 14.5px; line-height: 1.9;">
+        <li>Developing machine learning pipelines for urban flood susceptibility mapping</li>
+        <li>Integrating multi-source gridded population datasets for disaster exposure assessment</li>
+        <li>Applying dasymetric mapping and spatial statistics to environmental justice questions</li>
+        <li>Translating geospatial research into actionable insights for urban planners and policymakers</li>
+      </ul>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="section">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="date">2025.12</span>
+          <span>
+            <span class="news-badge badge-award">Award</span>
+            Received the <strong>Award for Excellent Academic Achievement</strong> from the National Institute for International Education, Ministry of Education.
+          </span>
+        </li>
+        <li>
+          <span class="date">2025.11</span>
+          <span>
+            <span class="news-badge badge-award">Award</span>
+            Won the <strong>Young Geographer Award</strong> at the 17th Japan-Korea-China Joint Conference on Geography.
+          </span>
+        </li>
+        <li>
+          <span class="date">2025.11</span>
+          <span>
+            <span class="news-badge badge-award">Award</span>
+            Received <strong>Best Paper Presentation</strong> at the 2025 KAGIS Fall Conference and International Symposium of IAG'i.
+          </span>
+        </li>
+        <li>
+          <span class="date">2025.07</span>
+          <span>
+            <span class="news-badge badge-pub">Publication</span>
+            New paper published: <em>"Exploring the Impact of Multi-Source Gridded Population Datasets on Flood-Exposed Population Estimates in Gangnam, Seoul."</em> ISPRS Int. J. Geo-Inf., 14(7), 262.
+          </span>
+        </li>
+        <li>
+          <span class="date">2025.02</span>
+          <span>
+            <span class="news-badge badge-pub">Publication</span>
+            New paper published: <em>"The Machine Learning-Based Mapping of Urban Pluvial Flood Susceptibility in Seoul."</em> ISPRS Int. J. Geo-Inf., 14(2), 57.
+          </span>
+        </li>
+        <li>
+          <span class="date">2024.11</span>
+          <span>
+            <span class="news-badge badge-award">Award</span>
+            Won <strong>Best Poster Presentation</strong> at the 2024 Joint Fall Conference of KAGIS and KSGPC.
+          </span>
+        </li>
+        <li>
+          <span class="date">2024.08</span>
+          <span>
+            <span class="news-badge badge-scholar">Scholarship</span>
+            Awarded the <strong>Global Korea Scholarship (GKS)</strong> for doctoral studies.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <h2 class="section-title">Publications</h2>
+
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.3390/ijgi14070262" target="_blank" rel="noopener">
+            Exploring the Impact of Multi-Source Gridded Population Datasets on Flood-Exposed Population Estimates in Gangnam, Seoul
+          </a>
+        </div>
+        <div class="pub-authors"><strong>Julieber T. Bersabe</strong> and Byong-Woon Jun</div>
+        <div class="pub-journal"><em>ISPRS International Journal of Geo-Information</em>, 2025, 14(7), 262.</div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.3390/ijgi14020057" target="_blank" rel="noopener">
+            The Machine Learning-Based Mapping of Urban Pluvial Flood Susceptibility in Seoul Integrating Flood Conditioning Factors and Drainage-Related Data
+          </a>
+        </div>
+        <div class="pub-authors"><strong>Julieber T. Bersabe</strong> and Byong-Woon Jun</div>
+        <div class="pub-journal"><em>ISPRS International Journal of Geo-Information</em>, 2025, 14(2), 57.</div>
+      </div>
+    </section>
+
+    <!-- CONFERENCES -->
+    <section id="conferences" class="section">
+      <h2 class="section-title">Conferences &amp; Presentations</h2>
+      <ul class="conf-list">
+
+        <li class="conf-item">
+          <span class="conf-num">[7]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type">Paper</span>
+              Towards Better Urban Pluvial Flood Susceptibility Mapping: Machine Learning-Based Integration of Flood Conditioning Factors and Drainage-Related Data in Seoul
+            </div>
+            <div class="conf-meta">The 17th Japan-Korea-China Joint Conference on Geography · 2025</div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[6]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type">Paper</span>
+              Effect of Multi-Source Gridded Population Data on Flood Exposure Estimates: Gangnam, South Korea
+            </div>
+            <div class="conf-meta">2025 KAGIS Fall Conference and International Symposium of IAG'i · 2025 <strong>Best Paper</strong></div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[5]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type poster">Poster</span>
+              Comparative Assessment of the Accuracy of Global and National Gridded Population Distribution Datasets in South Korea
+            </div>
+            <div class="conf-meta">2025 Spring Conference, Korean Association of Geographic Information Studies · 2025</div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[4]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type poster">Poster</span>
+              Exploring the Impact of Drain-related Variables in Modeling Urban Flood Susceptibility Using Machine Learning
+            </div>
+            <div class="conf-meta">2024 Joint Fall Conference of KAGIS and KSGPC · 2024 <strong>Best Poster</strong></div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[3]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type poster">Poster</span>
+              Exploring Spatially Varying Relationships Between Basement Homes in Flood Risk Areas and Vulnerable Population in Seoul
+            </div>
+            <div class="conf-meta">2023 Fall Conference, Korean Association of Geographic Information Studies · 2023</div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[2]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type">Paper</span>
+              Assessing Urban Flood Susceptibility Maps Based on Machine Learning Models in Seoul, South Korea
+            </div>
+            <div class="conf-meta">32nd Annual Conference of the GIS Association and IAG'i · 2023</div>
+          </div>
+        </li>
+
+        <li class="conf-item">
+          <span class="conf-num">[1]</span>
+          <div class="conf-body">
+            <div class="conf-title">
+              <span class="conf-type">Paper</span>
+              Estimating the Populations Vulnerable to Flood Risk in Seoul Using Dasymetric Mapping and Integrated Flooding Data
+            </div>
+            <div class="conf-meta">15th Korea-China-Japan Joint Conference on Geography · 2023 <strong>Young Geographers Award – Best Paper</strong></div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="section">
+      <h2 class="section-title">Honors &amp; Awards</h2>
+      <ul class="award-list">
+        <li class="award-item">
+          <span class="award-year">2025.12</span>
+          <div class="award-body">
+            <div class="award-name">Award for Excellent Academic Achievement</div>
+            <div>National Institute for International Education, Ministry of Education</div>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-year">2025.11</span>
+          <div class="award-body">
+            <div class="award-name">Young Geographer Award</div>
+            <div>17th Japan-Korea-China Joint Conference on Geography</div>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-year">2025.11</span>
+          <div class="award-body">
+            <div class="award-name">Best Paper Presentation</div>
+            <div>2025 KAGIS Fall Conference and International Symposium of IAG'i</div>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-year">2024.11</span>
+          <div class="award-body">
+            <div class="award-name">Best Poster Presentation</div>
+            <div>2024 Joint Fall Conference of KAGIS and Korean Society of Surveying, Geodesy, Photogrammetry and Cartography</div>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-year">2023.10</span>
+          <div class="award-body">
+            <div class="award-name">Young Geographers Award – Best Paper</div>
+            <div>15th Korea-China-Japan Joint Conference on Geography</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="edu-timeline">
+        <div class="edu-card">
+          <div class="edu-body">
+            <div class="edu-degree">Doctor of Philosophy, Geography</div>
+            <div class="edu-school">Kyungpook National University · Daegu, South Korea · 2024–present</div>
+            <div class="edu-detail">Adviser: Prof. Byong-Woon Jun</div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-body">
+            <div class="edu-degree">Master of Geography</div>
+            <div class="edu-school">Kyungpook National University · Daegu, South Korea · 2022–2024</div>
+            <div class="edu-detail">Adviser: Prof. Byong-Woon Jun</div>
+            <div class="edu-thesis">Thesis: Environmental Justice Assessment of Urban Flood Risk in Seoul Using Machine Learning and Intelligent Dasymetric Mapping</div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-body">
+            <div class="edu-degree">Bachelor of Science, Geography</div>
+            <div class="edu-school">University of the Philippines · Quezon City, Philippines · 2015–2020</div>
+            <div class="edu-detail">Adviser: Prof. Yany P. Lopez</div>
+            <div class="edu-thesis">Thesis: Emotional Geographies of International Student Mobilities: Exploring Experiences of Acculturation and Adaptation Among Filipino International Students in South Korea</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & CERTIFICATIONS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills &amp; Certifications</h2>
+
+      <div class="skills-grid" style="margin-bottom:1.5rem;">
+        <div class="skill-group">
+          <span class="skill-group-emoji">💻</span>
+          <h4>Programming</h4>
+          <p>Python (proficient), LaTeX</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-emoji">🗺️</span>
+          <h4>GIS &amp; Remote Sensing</h4>
+          <p>ArcGIS, QGIS</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-emoji">📊</span>
+          <h4>Statistical Analysis</h4>
+          <p>SPSS</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:14px; font-weight:600; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.75rem;">Certifications</h3>
+      <ul class="cert-list" style="margin-bottom:1.5rem;">
+        <li class="cert-item">
+          <span>Test of Proficiency in Korean (TOPIK) — Level 6</span>
+          <span class="cert-score">260 / 300 · Aug 2025</span>
+        </li>
+        <li class="cert-item">
+          <span>Test of English as a Foreign Language (TOEFL)</span>
+          <span class="cert-score">107 / 120 · Feb 2024</span>
+        </li>
+      </ul>
+
+      <h3 style="font-size:14px; font-weight:600; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.75rem;">Scholarships</h3>
+      <div>
+        <div class="scholar-item">
+          <span class="scholar-year">2024.08</span>
+          <span><strong>Global Korea Scholarship (GKS)</strong> — Graduate Studies, Doctoral Degree, Ministry of Education, South Korea</span>
+        </div>
+        <div class="scholar-item">
+          <span class="scholar-year">2020.08</span>
+          <span><strong>Global Korea Scholarship (GKS)</strong> — Graduate Studies, Master's Degree, Ministry of Education, South Korea</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <p>© 2025 Julieber Bersabe · Kyungpook National University · Last updated: April 2026</p>
+  <p style="margin-top:0.3rem;">Built with GitHub Pages · <a href="mailto:geog.jbersabe@gmail.com">geog.jbersabe@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
